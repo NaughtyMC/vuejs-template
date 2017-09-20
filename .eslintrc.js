@@ -23,6 +23,8 @@ module.exports = {
 	'rules': {
 		'no-tabs': 0,
 		'indent': ['error', 'tab'],
+		'no-param-reassign': 0,
+		'no-plusplus': 0,
 		// don't require .vue extension when importing
 		'import/extensions': ['error', 'always', {
 			'js': 'never',
