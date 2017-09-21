@@ -1,12 +1,11 @@
 {
-  "name": "Asiago",
-  "description": "A next generation communication platform",
+  "name": "vuejs-template",
+  "description": "A launching point for new Vue.js projects",
   "version": "1.0.0",
   "author": "Will McNaughton <wsmcnaughton@gmail.com>",
   "private": true,
   "scripts": {
     "clean": "rimraf dist",
-    "api": "node build/dev-api.js",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
