@@ -5,7 +5,7 @@
 		<input v-model="newItem" >
 		<button id="add-button" @click="addItemToList">Add</button>
 		<ul>
-			<li v-for="item in listItems" :key="item.index">{{ item }}</li>
+			<li v-for="task in tasks" :key="task.index">{{ task }}</li>
 		</ul>
 	</div>
 </template>
@@ -15,14 +15,15 @@ export default {
 	name: 'test',
 	data() {
 		return {
-			listItems: ['buy food', 'play games', 'sleep'],
+			tasks: this.$store.state.tasks,
 			newItem: '',
 		};
 	},
 	methods: {
 		addItemToList() {
-			this.listItems.push(this.newItem);
-			this.newItem = '';
+			this.$store.dispatch('addTask', this.newItem).then(() => {
+				this.newItem = '';
+			});
 		},
 	},
 };
