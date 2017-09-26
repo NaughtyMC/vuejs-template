@@ -12,7 +12,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint:js": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs build config",
-    "lint:css": "stylelint src/**/*.vue styles/**/*.css"
+    "lint:css": "stylelint src/**/*.vue styles/**/*.css",
+		"lint": "npm run lint:js && npm run lint:css"
   },
   "dependencies": {
     "vue": "^2.4.4",
