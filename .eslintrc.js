@@ -25,6 +25,7 @@ module.exports = {
 		'indent': ['error', 'tab'],
 		'no-param-reassign': 0,
 		'no-plusplus': 0,
+		'max-len': ['error', 120, 2],
 		// don't require .vue extension when importing
 		'import/extensions': ['error', 'always', {
 			'js': 'never',

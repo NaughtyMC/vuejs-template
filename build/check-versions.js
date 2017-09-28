@@ -35,15 +35,17 @@ module.exports = function exports() {
 		}
 	}
 
+	/* eslint-disable no-console */
 	if (warnings.length) {
-		console.log(''); // eslint-disable-line no-console
-		console.log(chalk.yellow('To use this template, you must update following to modules:')); // eslint-disable-line no-console
-		console.log(); // eslint-disable-line no-console
+		console.log('');
+		console.log(chalk.yellow('To use this template, you must update following to modules:'));
+		console.log();
 		for (let i = 0; i < warnings.length; i += 1) {
 			const warning = warnings[i];
-			console.log(`  ${warning}`); // eslint-disable-line no-console
+			console.log(`  ${warning}`);
 		}
-		console.log(); // eslint-disable-line no-console
+		console.log();
 		process.exit(1);
 	}
+	/* eslint-enable no-console */
 };
