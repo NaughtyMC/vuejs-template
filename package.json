@@ -13,7 +13,7 @@
     "test": "npm run unit && npm run e2e",
     "lint:js": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs build config",
     "lint:css": "stylelint src/**/*.vue styles/**/*.css",
-		"lint": "npm run lint:js && npm run lint:css"
+    "lint": "npm run lint:js && npm run lint:css"
   },
   "dependencies": {
     "vue": "^2.4.4",
@@ -75,8 +75,10 @@
     "sinon-chai": "^2.13.0",
     "style-loader": "^0.18.2",
     "stylelint": "^8.1.1",
+    "stylelint-config-sass-guidelines": "^3.1.0",
     "stylelint-config-standard": "^17.0.0",
     "stylelint-processor-html": "^1.0.0",
+    "stylelint-scss": "^2.1.0",
     "stylelint-webpack-plugin": "^0.9.0",
     "url-loader": "^0.5.9",
     "vue-loader": "^13.0.5",
