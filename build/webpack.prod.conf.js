@@ -28,10 +28,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 				test: /\.[js]|[vue]$/,
 				loader: 'eslint-loader',
 				exclude: '/node_modules/',
-				options: {
-					failOnError: true,
-					emitError: true,
-				},
 			},
 		],
 	},
